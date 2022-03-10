@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>H1 Heading.</h1>
+    <div class="demo_container">
+        <div class="demo_box">Demonstration Box</div>
+        <p>aman</p>
+    </div>
+    <div class="addtext_div">
+        <p class="addtext">text</p>
+        <p></p>
+    </div>
+    <p class="gval"></p>
+    <input type="text" value="input">
+    <script>
+        $(".demo_container").html("<p>All new content</p>").css("color", "red");
+        $(".addtext").prepend("before text ").append(" after text").before("before tag").after("after tag").attr("id", "d_id").removeAttr("id");
+        $("p:last-child").text("text method").val();
+        var hval = $("input").val();
+        $(".gval").text(hval);
+        
+
+
+
+    </script>
+</body>
+
+</html>

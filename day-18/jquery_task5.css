@@ -1,0 +1,23 @@
+img {
+    width: 200px;
+}
+#update, #delete, #search {
+    display: none;
+    margin: auto;
+    padding: 10px;
+}
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: lightcoral;
+}
+table, tr, th, td{
+    margin: 10px auto;
+    border: 1px solid red;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px;
+}
+tr {
+    height: 100px;
+}

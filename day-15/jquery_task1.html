@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery_task1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            function add() {
+                var inptv = $('input').val();
+                console.log(inpt);
+                if (inptv == "") {
+                    alert("input field is empty");
+                }
+                else {
+                    var inpt = `<li>${inptv}</li>`;
+                    $('ul').append(inpt);
+                }
+            }
+            $('button').click(add);
+
+            // $('li').click(function () { $(this).remove(); });
+
+            // $('ul').click(function (e) {
+            //     e.target.remove();
+            // });
+
+            $('ul').on("click" , "li" , function () { $(this).remove(); });
+
+        });
+    </script>
+    <style>
+        li {
+            font-size:larger;
+            color: blue;
+        }
+        button {
+            background-color: blueviolet;
+            width: 100px;
+            height: 50px;
+            border: 0px;
+        }
+        input {
+            width: 100px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>Tea</li>
+        <li>Coffee</li>
+        <li>Lemon</li>
+        <li>Car</li>
+        <li>COC</li>
+    </ul>
+    <input type="text">
+    <button>Add</button>
+</body>
+
+</html>

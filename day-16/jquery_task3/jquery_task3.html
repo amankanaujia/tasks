@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery_task3</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        form {
+            background-color: blueviolet;
+            padding: 100px;
+            width: 500px;
+        }
+        label, input {
+            height: 50px;
+            font-size: large;
+        }
+        .flex {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        div {
+            margin: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div >
+        <form action="" class="flex">
+            
+                <label for="">First Name : </label>
+                <input type="text" name="" id="fname" class="" > <br>
+                <div class="form_error">first name is not correct</div> <br>
+            
+            
+            
+                <label for="">Last Name : </label>
+                <input type="text" name="" id="lname" class=""> <br>
+                <div class="form_error">last name is not correct</div> <br>
+            
+            
+            
+                <label for="">Email : </label>
+                <input type="email" name="" id="mail_data"> <br>
+                <div class="form_error">email format is not correct or empty</div> <br>
+            
+            
+            
+                <label for="">Password : </label>
+                <input type="password" name="" id="password"> <br>
+                <div class="form_error">password should have 6 characters</div> <br>
+            
+            
+            
+                <label for="">Confirm Password : </label>
+                <input type="password" name="" id="cpassword"> <br>
+                <div class="form_error">re-enter the above password</div> <br>
+            
+            
+
+            <input type="submit">
+        </form>
+        
+    </div>
+    <script src="jquery_task3.js"></script>
+</body>
+
+</html>

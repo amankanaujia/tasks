@@ -1,0 +1,11 @@
+div {
+    width: 300px;
+    height: 100px;
+    overflow: auto;
+    margin: 20px;
+    border: 1px solid;
+    overflow-wrap: break-word;
+}
+/* display: flex;
+    flex-wrap: wrap;
+    border: 1px solid; */

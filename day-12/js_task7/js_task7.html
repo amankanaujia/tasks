@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <link rel="stylesheet" href="js_task7.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="" onsubmit="return validate()">
+            <label for="">Name : </label> <br>
+            <input type="text"> <br>
+    
+            <label for="">Age : </label> <br>
+            <input type="number"> <br>
+    
+            <label for="">Email : </label> <br>
+            <input type="email"> <br>
+    
+            <label for="">Phone Number : </label> <br>
+            <input type="number"> <br>
+    
+            <label for="City">City : </label> <br>
+            <select name="City" id="">
+                <option value="Lucknow">Lucknow</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Bangalore" selected>Bangalore</option>
+            </select> <br>
+    
+            <label for="">Hobbies : </label> <br>
+            
+            <label for="a">
+                <input type="checkbox" id="a" name="hobbies" value="Chess">Chess
+            </label>
+            
+            <label for="b">
+                <input type="checkbox" id="b" name="hobbies" value="Batminton">Batminton
+
+            </label>
+            
+            <label for="c">
+                <input type="checkbox" id="c" name="hobbies" value="Music">Music
+            </label> <br>
+    
+            <button>Submit</button>
+        </form>
+    </div>
+    
+
+    <script src="js_task7.js"></script>
+</body>
+
+</html>

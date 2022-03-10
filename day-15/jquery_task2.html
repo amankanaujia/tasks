@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery_task2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            
+            var chkbox = $("input[type='checkbox']");
+            $(chkbox).click(function () {
+                if ($(chkbox).is(':checked') == true) {
+                    $('#pass').attr('type','text');
+                }
+                else {
+                    $('#pass').attr('type','password');
+                }
+            });
+
+        });
+    </script>
+    <style>
+        div {
+            background-color: #ffacac;
+            padding: 10px;
+        }
+        div:nth-child(1) h1:nth-child(2){
+            background-color: rgb(82, 82, 82);
+        }
+        div:nth-child(2) h1:nth-child(1){
+            background-color: rgb(139, 75, 75);
+        }
+        h1:nth-child(3){
+            background-color: rgb(97, 6, 6);
+        }
+        
+    </style>
+</head>
+<body>
+    
+
+    <div>
+        <input type="password" id="pass"> <br>
+        <input type="checkbox" name="password[]" id="password"><label for=""> show password</label>
+    </div>
+</body>
+</html>

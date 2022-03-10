@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+        /* 1. element selector */
+        body {
+            background-color: blueviolet;
+        }
+
+        /* 2. id selector */
+        #id1 {
+            background-color: #cf2525;
+        }
+
+        /* 3. Class Selector */
+        .classs {
+            background-color: #c48282;
+        }
+
+        /* 4. Universal Selector */
+        * {
+            margin: 0px;
+        }
+
+        /* 5. General Sibling Selector */
+        div~p {
+            background-color: brown;
+        }
+
+        /* 6. Descendant Selector */
+        div p {
+            background-color: burlywood;
+        }
+
+        /* 7. Child Selector */
+        #child>p {
+            background-color: chartreuse;
+        }
+
+        /* 8. Adjacent Sibling Selector */
+        div+p {
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>1. element selector</h1>
+    <p id="id1">2. id selector output</p>
+    <p class="classs">3. Class Selector output</p>
+
+    <div id="child">
+        <p>7. Child Selector</p>
+        <div>
+            <p>To show the difference.</p>
+        </div>
+        <p>7. Child Selector</p>
+
+    </div>
+    <div>
+
+        <p>6. Descendant Selector</p>
+        <p>6. Descendant Selector</p>
+        <p>6. Descendant Selector</p>
+    </div>
+
+    <div id="adjust"></div>
+    <p>8. Adjacent Sibling Selector</p>
+
+    <p>5. General Sibling Selector</p>
+    <p>5. General Sibling Selector</p>
+</body>
+
+</html>
